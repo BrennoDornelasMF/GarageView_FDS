@@ -29,3 +29,7 @@ O documento com as histórias de usuário e cenários BDD pode ser acessado abai
 
 ### Meus Anúncios - (Vendedor)
 ![Meus Anúncios - (Vendedor)](img/pagina_meusAnuncios.png)
+
+---
+## Sreencast
+[Vídeo](https://youtu.be/XrmxfoWl5ao?si=crOvMZbUFmec_ggd)
