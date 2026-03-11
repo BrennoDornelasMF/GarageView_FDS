@@ -10,9 +10,10 @@ O documento com as histórias de usuário e cenários BDD pode ser acessado abai
 
 ## Print do quadro da Sprint e do Backlog
 
-![Quadro da Sprint](img/sprint1.png)
 
+![Quadro da Sprint](img/sprint1.png)
 ---
+
 
 ![Quadro backlog](img/backlog.png)
 
