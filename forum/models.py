@@ -1,6 +1,4 @@
-﻿# -*- coding: utf-8 -*-
 from django.db import models
-
 
 class Anuncio(models.Model):
     titulo = models.CharField(max_length=200)
