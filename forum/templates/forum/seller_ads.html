@@ -1,0 +1,38 @@
+{% extends "forum/base.html" %}
+
+{% block title %}Meus Anúncios{% endblock %}
+
+{% block content %}
+  <h2>Meus Anúncios {% if vendedor %} - {{ vendedor }}{% endif %}</h2>
+  {% if not vendedor %}
+    <p>Você não está logado. Entre para ver seus anúncios.</p>
+  {% endif %}
+  <div class="grid-anuncios" style="margin-top:12px;">
+    {% for ad in anuncios %}
+      <div class="card-veiculo">
+        <div class="imagem-veiculo">
+          {% if ad.imagem_url %}
+            <img src="{{ ad.imagem_url }}" alt="{{ ad.titulo }}">
+          {% else %}
+            <img src="https://picsum.photos/seed/{{ ad.id }}/800/400" alt="placeholder">
+          {% endif %}
+        </div>
+        <div class="info-veiculo">
+          <div class="dados-principais">
+            <a href="{% url 'forum:ad_detail' ad.id %}"><div class="card-body-title">{{ ad.titulo }}</div></a>
+            <div class="card-body-sub">R$ {{ ad.preco }}</div>
+          </div>
+        </div>
+        <div style="padding:10px; display:flex; gap:8px;">
+          <a href="{% url 'forum:ad_edit' ad.id %}"><button class="btn-primary">Editar</button></a>
+          <form method="post" action="{% url 'forum:ad_delete' ad.id %}" style="display:inline;">
+            {% csrf_token %}
+            <input type="submit" value="Excluir" style="background:#e74c3c; color:#fff; border:none; padding:6px 10px; border-radius:6px; cursor:pointer;">
+          </form>
+        </div>
+      </div>
+    {% empty %}
+      <p>Sem anúncios.</p>
+    {% endfor %}
+  </div>
+{% endblock %}

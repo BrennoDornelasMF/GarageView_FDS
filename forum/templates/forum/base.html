@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Site{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">LOGO</div>
+        <div class="busca-container">
+            <input type="text" placeholder="Buscar Veículo...">
+        </div>
+        <div class="perfil-container">
+            <span class="nome-perfil">Perfil</span>
+            <div class="foto-perfil"></div>
+        </div>
+    </header>
+
+    <div class="container-principal">
+        <aside class="barra-lateral">
+            {% block sidebar %}
+            <h3>Filtros</h3>
+            <details>
+                <summary> filtros</summary>
+                <div class="placeholder-filtros">
+                    <p> Colocar filtros aqui </p>
+                </div>
+            </details>
+            {% endblock %}
+        </aside>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+</body>
+</html>

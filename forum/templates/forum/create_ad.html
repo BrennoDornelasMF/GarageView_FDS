@@ -1,0 +1,31 @@
+{% extends "forum/base.html" %}
+
+{% block title %}Criar Anúncio{% endblock %}
+
+{% block content %}
+  <h2>Criar anúncio</h2>
+  <form method="post" action="{% url 'forum:ad_create' %}">
+    {% csrf_token %}
+    <div>
+      <label for="titulo">Nome do veículo</label><br>
+      <input type="text" id="titulo" name="titulo" required style="width:100%;">
+    </div>
+    <div style="margin-top:8px;">
+      <label for="preco">Preço</label><br>
+      <input type="text" id="preco" name="preco" style="width:200px;">
+    </div>
+    <div style="margin-top:8px;">
+      <label for="imagem_url">Imagem (URL)</label><br>
+      <input type="text" id="imagem_url" name="imagem_url" style="width:100%;">
+    </div>
+    <div style="margin-top:8px;">
+      <label for="descricao">Descrição</label><br>
+      <textarea id="descricao" name="descricao" rows="6" style="width:100%;"></textarea>
+    </div>
+    <div style="margin-top:10px; display:flex; gap:8px; align-items:center;">
+      <input class="btn-primary" type="submit" value="Salvar e publicar">
+      <button class="btn-primary outline" type="submit" name="next" value="novo">Salvar e criar outro</button>
+      <a href="{% url 'forum:index' %}"><button type="button">Cancelar</button></a>
+    </div>
+  </form>
+{% endblock %}
