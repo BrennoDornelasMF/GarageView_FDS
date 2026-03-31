@@ -45,6 +45,10 @@ O documento com as histórias de usuário e cenários BDD pode ser acessado abai
 
 # Entrega 2 - 30/03
 
+## link do Deploy 
+
+[Link do Deply](https://garageview-fds-2.onrender.com/forum/)
+
 ## Quadro da Sprint 02 e Backlog 
 
 ![alt text](img/sprint2.png)
@@ -57,3 +61,7 @@ O documento com as histórias de usuário e cenários BDD pode ser acessado abai
 grupo optou por não utilizar pair programming principalmente por questões práticas relacionadas à dinâmica do trabalho acadêmico. Como os integrantes possuíam rotinas e horários diferentes, tornou-se difícil sincronizar sessões contínuas de desenvolvimento em conjunto, que são essenciais para essa metodologia. Além disso, a divisão de tarefas permitiu maior paralelismo na execução do projeto, possibilitando que diferentes partes fossem desenvolvidas simultaneamente, otimizando o tempo disponível.
 
 Outro fator relevante foi o nível de familiaridade da equipe com a técnica. Como o pair programming exige prática para ser eficiente, sua adoção poderia inicialmente reduzir a produtividade. Assim, o grupo priorizou uma abordagem mais tradicional, baseada na separação de responsabilidades, garantindo entregas mais rápidas dentro do prazo estabelecido.
+
+## Sreencast
+
+[Video](https://youtu.be/hZ6sR2XvMfE)
