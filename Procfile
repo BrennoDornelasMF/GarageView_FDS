@@ -1,2 +1,2 @@
-release: echo "Running migrations..." && python manage.py migrate && echo "Migrations completed."
+release: python manage.py migrate
 web: gunicorn project.wsgi:application
